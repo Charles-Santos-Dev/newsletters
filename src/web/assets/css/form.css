@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html, body, main.main, .content {
+  height: 100%;
+  width: 100%; }
+
+.display-none {
+  display: none; }
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #dcdcdc; }
+  .content h1 {
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    font-size: 35px; }
+  .content .form {
+    letter-spacing: .6px; }
+    .content .form form .input {
+      min-width: 320px;
+      display: flex;
+      height: 30px;
+      align-items: center;
+      border: 1px solid #000;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      padding: 5px 40px; }
+      .content .form form .input span {
+        flex-grow: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        min-width: 60px; }
+      .content .form form .input input {
+        flex-grow: 5;
+        border: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        min-width: 60px;
+        background-color: unset;
+        outline: unset; }
+    .content .form form .message {
+      text-align: center;
+      margin-bottom: 15px; }
+      .content .form form .message .message_res {
+        color: red; }
+    .content .form form .input-submit.loading input {
+      color: #0064b4;
+      background-image: url(https://ethinkers-news.s3.amazonaws.com/giphy.gif);
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: center; }
+    .content .form form input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px #dcdcdc inset !important; }
+    .content .form form .input-submit input {
+      border: none;
+      height: 26px;
+      background-color: #0064b4;
+      color: #fff;
+      padding: 0 20px;
+      display: block;
+      margin: auto;
+      cursor: pointer; }
+    .content .form form .input-submit input:hover {
+      opacity: .7; }
+
+/*# sourceMappingURL=form.css.map */

@@ -1,0 +1,15 @@
+.header-main {
+  height: 40px;
+  padding: 0 20px; }
+  .header-main .session {
+    float: right;
+    margin-top: 12px; }
+    .header-main .session .logout {
+      cursor: pointer;
+      font-size: 12px; }
+      .header-main .session .logout .separator {
+        margin: 0 10px; }
+    .header-main .session .logout:hover {
+      opacity: .7; }
+
+/*# sourceMappingURL=logout.css.map */

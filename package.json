@@ -1,0 +1,32 @@
+{
+   "name": "models-newsletter",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "devDependencies": {
+      "ts-node": "3.3.0",
+      "@types/node": "^8.0.29",
+      "typescript": "3.3.3333",
+      "nodemon": "^2.0.2"
+   },
+   "dependencies": {
+      "@types/node": "^13.1.4",
+      "aws-sdk": "^2.594.0",
+      "bcrypt": "^3.0.8",
+      "body-parser": "^1.19.0",
+      "class-transformer": "^0.2.3",
+      "class-validator": "^0.11.0",
+      "connect-busboy": "^0.0.2",
+      "express": "^4.17.1",
+      "multer": "^1.4.2",
+      "mysql": "^2.17.1",
+      "pm2": "^4.2.1",
+      "reflect-metadata": "^0.1.10",
+      "routing-controllers": "^0.8.0",
+      "sessionstorage": "^0.1.0",
+      "typeorm": "0.2.22"
+   },
+   "scripts": {
+      "start": "ts-node src/index.ts",
+      "build": "tsc --experimentalDecorators --outDir ./build ./src/*.ts"
+   }
+}

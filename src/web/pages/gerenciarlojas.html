@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Lojas</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://ethinkers-news.s3.amazonaws.com/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../assets/css/newsletter.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/logout.css">
+    <script type="text/javascript" src="../assets/js/session.js"></script>
+    <script type="text/javascript" src="../assets/js/gerenciarlojas.js"></script>
+</head>
+<body class="display-none">
+<div class="header-main">
+    <div class="session">
+        <span class="name-user"></span>
+        <span class="logout" onclick="logout()"><span class="separator">|</span>Sair</span>
+    </div>
+</div>
+<div class="lojas">
+    <h1 class="title">Lojas</h1>
+    <table class="table-lojas" cellpadding="0" cellspacing="0">
+        <thead class="thead-lojas">
+        <tr bgcolor="#0064B4">
+            <td>ID</td>
+            <td>CRIAÇÃO</td>
+            <td>NOME</td>
+            <td>ATIVO</td>
+            <td>
+                <select onchange="selectUser(this)" class="filter-users">
+                    <option value="" selected>Selecione Usuário</option>
+                </select>
+            </td>
+            <td>EDITAR</td>
+        </tr>
+        </thead>
+        <tbody class="tbody-lojas"></tbody>
+    </table>
+    <a class="back" href="/admin">Admin</a>
+</div>
+</body>
+</html>

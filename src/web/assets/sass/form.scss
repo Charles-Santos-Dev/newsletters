@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@mixin inputs{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    min-width: 60px;
+}
+html, body, main.main, .content {
+    height: 100%;
+    width: 100%;
+}
+.display-none{
+    display: none;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #dcdcdc;
+    h1{
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+        font-size: 35px;
+    }
+    .form{
+        letter-spacing: .6px;
+        form{
+              .input{
+                    min-width: 320px;
+                    display: flex;
+                    height: 30px;
+                    align-items: center;
+                    border: 1px solid #000;
+                    border-radius: 10px;
+                    margin-bottom: 20px;
+                    padding: 5px 40px;
+                    span{
+                        flex-grow: 1;
+                        @include inputs;
+                    }
+                    input{
+                        flex-grow: 5;
+                        border: none;
+                        @include inputs;
+                        background-color: unset;
+                        outline: unset;
+                    }
+              }
+                .message{
+                    text-align: center;
+                    margin-bottom: 15px;
+                    .message_res{
+                        color: red;
+                    }
+                }
+                .input-submit.loading{
+                    input{
+                        color: #0064b4;
+                        background:{
+                            image: url(https://ethinkers-news.s3.amazonaws.com/giphy.gif);
+                            repeat: no-repeat;
+                            size: 20px;
+                            position: center;
+                        }
+                    }
+                }
+                input:-webkit-autofill {
+                    -webkit-box-shadow: 0 0 0 30px #dcdcdc inset !important;
+                }
+                .input-submit{
+                    input{
+                        border: none;
+                        height: 26px;
+                        background-color: rgb(0, 100, 180);
+                        color: #fff;
+                        padding: 0 20px;
+                        display: block;
+                        margin: auto;
+                        cursor: pointer;
+                    }
+                    input:hover{
+                        opacity: .7;
+                    }
+                }
+        }
+    }
+}

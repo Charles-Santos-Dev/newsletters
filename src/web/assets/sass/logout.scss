@@ -1,0 +1,18 @@
+.header-main{
+    height: 40px;
+    padding: 0 20px;
+    .session{
+        float: right;
+        margin-top: 12px;
+        .logout{
+            cursor: pointer;
+            font-size: 12px;
+            .separator{
+                margin: 0 10px;
+            }
+        }
+        .logout:hover{
+            opacity: .7;
+        }
+    }
+}

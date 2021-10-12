@@ -1,0 +1,11 @@
+table#table_finalizar {
+  display: none; }
+
+a.back {
+  color: #000;
+  margin: 60px auto;
+  letter-spacing: .5px;
+  display: block;
+  width: max-content; }
+
+/*# sourceMappingURL=viewtemplate.css.map */

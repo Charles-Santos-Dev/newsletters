@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Cadastro de templates</title>
+	<link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5cb63e5de5f7d13a17221003/1555560103922-NF9RNBESPEQHTRSNPW63/ke17ZwdGBToddI8pDm48kFAvcH6qBfKOon61BTALRexZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVHo83R_ZugWznsXe9rPU9gTG--Z32lXeYIpHo0KROgob5uG45vQwBxdpDrCGUSSl5w/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../assets/css/newsletter.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/logout.css">
+	<script type="text/javascript" src="assets/js/session.js"></script>
+	<script type="text/javascript" src="../assets/js/managerStores.js"></script>
+	<script type="text/javascript" src="../assets/js/registerTemplate.js"></script>
+</head>
+<body>
+	<div class="header-main">
+		<div class="session">
+			<span class="name-user"></span>
+			<span class="logout" onclick="logout()"><span class="separator">|</span>Sair</span>
+		</div>
+	</div>
+	<main class="main register">
+		<div class="register_title">
+			<h1 id="title_main">Cadastrar Template</h1>
+		</div>
+		<div class="content_register">
+			<h2 id="name_loja"></h2>
+			<div class="input_register">
+				<h3>Preencha o HEAD</h3>
+				<textarea id="edit_head"></textarea>
+			</div>
+			<div class="input_register">
+				<h3>Preencha o HEADER</h3>
+				<textarea id="edit_header"></textarea>
+			</div>
+			<div class="input_register">
+				<h3>Preencha o FOOTER</h3>
+				<textarea id="edit_footer"></textarea>
+			</div>
+			<div class="register_buttons">
+				<button onclick="checkRegister()">Cadastrar</button>
+				<a href="/">Voltar para lojas</a>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

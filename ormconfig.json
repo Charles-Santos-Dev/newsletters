@@ -1,0 +1,15 @@
+{
+   "type": "mysql",
+   "host": "54.207.85.105",
+   "port": 3306,
+   "username": "newsletters_user",
+   "password": "newsletters_1qazZAQ!",
+   "database": "newsletters",
+   "synchronize": true,
+   "entities": [
+      "src/Model/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/Model"
+   }
+}

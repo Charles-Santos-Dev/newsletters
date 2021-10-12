@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Usuários</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://ethinkers-news.s3.amazonaws.com/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../assets/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/newsletter.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/logout.css">
+    <script type="text/javascript" src="../assets/js/session.js"></script>
+    <script type="text/javascript" src="../assets/js/usuarios.js"></script>
+</head>
+<body class="display-none">
+<div class="header-main">
+    <div class="session">
+        <span class="name-user"></span>
+        <span class="logout" onclick="logout()"><span class="separator">|</span>Sair</span>
+    </div>
+</div>
+<div class="users">
+    <h1 class="title">Usuários</h1>
+    <table class="table-uers" cellpadding="0" cellspacing="0">
+        <thead class="thead-users">
+            <tr bgcolor="#0064B4">
+                <td>ID</td>
+                <td>NOME</td>
+                <td>EMAIL</td>
+                <td class="display-none">SENHA</td>
+                <td>ATIVO</td>
+                <td>ADMIN</td>
+                <td>EDITAR</td>
+                <td>LOJAS VINCULADAS</td>
+            </tr>
+        </thead>
+        <tbody class="tbody-users"></tbody>
+    </table>
+    <div class="add-newuser">
+        <div class="fields display-none">
+            <input type="text" placeholder="Nome" name="nome"/>
+            <input type="text" placeholder="Email" name="email"/>
+            <input type="password" placeholder="Senha" name="senha"/>
+            <input type="text" placeholder="Ativo" name="ativo"/>
+            <input type="text" placeholder="Admin" name="admin"/>
+        </div>
+        <span onclick="addNewUser(this)" class="buttonadd button">Adicionar</span>
+        <span onclick="cancelNewUser(this)" class="button display-none cancel">Cancelar</span>
+    </div>
+    <a class="back" href="/admin">Admin</a>
+</div>
+</body>
+</html>

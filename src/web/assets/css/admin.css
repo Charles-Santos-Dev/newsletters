@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%; }
+
+.admin {
+  height: calc(100% - 40px); }
+
+.display-none {
+  display: none !important; }
+
+.admin {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+
+.content-admin {
+  width: max-content;
+  height: max-content;
+  max-width: 500px;
+  display: flex; }
+  .content-admin span {
+    display: inline-block; }
+    .content-admin span a {
+      text-decoration: none;
+      color: #000;
+      padding: 10px;
+      background-color: #ccc;
+      letter-spacing: .6px; }
+    .content-admin span a:hover {
+      opacity: .7; }
+  .content-admin span:not(:last-child) {
+    margin-right: 20px; }
+
+.users, .lojas, .templates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px; }
+  .users h1.title, .lojas h1.title, .templates h1.title {
+    margin: 50px 0; }
+  .users .table-uers .thead-users tr td, .users .table-uers .thead-lojas tr td, .users .table-lojas .thead-users tr td, .users .table-lojas .thead-lojas tr td, .users .table-templates .thead-users tr td, .users .table-templates .thead-lojas tr td, .lojas .table-uers .thead-users tr td, .lojas .table-uers .thead-lojas tr td, .lojas .table-lojas .thead-users tr td, .lojas .table-lojas .thead-lojas tr td, .lojas .table-templates .thead-users tr td, .lojas .table-templates .thead-lojas tr td, .templates .table-uers .thead-users tr td, .templates .table-uers .thead-lojas tr td, .templates .table-lojas .thead-users tr td, .templates .table-lojas .thead-lojas tr td, .templates .table-templates .thead-users tr td, .templates .table-templates .thead-lojas tr td {
+    font-weight: bolder;
+    color: #fff; }
+  .users .table-uers .tbody-users tr td img, .users .table-uers .tbody-lojas tr td img, .users .table-uers .tbody-templates tr td img, .users .table-lojas .tbody-users tr td img, .users .table-lojas .tbody-lojas tr td img, .users .table-lojas .tbody-templates tr td img, .users .table-templates .tbody-users tr td img, .users .table-templates .tbody-lojas tr td img, .users .table-templates .tbody-templates tr td img, .lojas .table-uers .tbody-users tr td img, .lojas .table-uers .tbody-lojas tr td img, .lojas .table-uers .tbody-templates tr td img, .lojas .table-lojas .tbody-users tr td img, .lojas .table-lojas .tbody-lojas tr td img, .lojas .table-lojas .tbody-templates tr td img, .lojas .table-templates .tbody-users tr td img, .lojas .table-templates .tbody-lojas tr td img, .lojas .table-templates .tbody-templates tr td img, .templates .table-uers .tbody-users tr td img, .templates .table-uers .tbody-lojas tr td img, .templates .table-uers .tbody-templates tr td img, .templates .table-lojas .tbody-users tr td img, .templates .table-lojas .tbody-lojas tr td img, .templates .table-lojas .tbody-templates tr td img, .templates .table-templates .tbody-users tr td img, .templates .table-templates .tbody-lojas tr td img, .templates .table-templates .tbody-templates tr td img {
+    width: 20px;
+    height: auto;
+    cursor: pointer; }
+  .users td, .lojas td, .templates td {
+    padding: 5px 15px;
+    text-align: center; }
+    .users td select, .lojas td select, .templates td select {
+      width: 100%; }
+    .users td span a, .lojas td span a, .templates td span a {
+      text-decoration: none; }
+    .users td span span:hover, .lojas td span span:hover, .templates td span span:hover {
+      opacity: .6; }
+    .users td input, .lojas td input, .templates td input {
+      border: none;
+      padding: 5px;
+      text-align: center; }
+    .users td input[name="admin"], .users td [name="ativo"], .lojas td input[name="admin"], .lojas td [name="ativo"], .templates td input[name="admin"], .templates td [name="ativo"] {
+      max-width: 25px; }
+    .users td input[name="nome"], .users td [name="senha"], .lojas td input[name="nome"], .lojas td [name="senha"], .templates td input[name="nome"], .templates td [name="senha"] {
+      max-width: 50px; }
+    .users td input[name="email"], .lojas td input[name="email"], .templates td input[name="email"] {
+      max-width: 300px; }
+
+.lojas .tbody-lojas td input[name="nome"] {
+  max-width: 100px; }
+
+a.back {
+  color: #000;
+  margin-top: 40px;
+  letter-spacing: .5px; }
+
+.buttons-modal {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between; }
+  .buttons-modal span {
+    margin: 0 !important; }
+
+.add-newuser {
+  width: 61%;
+  position: relative; }
+  .add-newuser .fields {
+    width: 88%;
+    float: left; }
+    .add-newuser .fields input {
+      float: left;
+      border: 1px solid #ccc;
+      padding: 5px;
+      box-sizing: border-box; }
+    .add-newuser .fields input[name="admin"], .add-newuser .fields [name="ativo"] {
+      width: 11%; }
+    .add-newuser .fields input[name="nome"], .add-newuser .fields [name="senha"] {
+      width: 18%; }
+    .add-newuser .fields input[name="email"] {
+      width: 42%; }
+  .add-newuser span.cancel {
+    position: absolute;
+    right: -85px;
+    padding: 5px; }
+  .add-newuser span.buttonadd {
+    width: 12%;
+    float: right;
+    user-select: none; }
+
+.button {
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #0064B4;
+  color: #fff;
+  letter-spacing: .5px;
+  box-shadow: -3px 3px #0064B4, -2px 2px #0064B4, -1px 1px #0064B4;
+  border: 1px solid #0064B4;
+  box-sizing: border-box; }
+
+.button.click {
+  box-shadow: unset;
+  border: unset; }
+
+.button:hover {
+  opacity: .7; }
+
+/*# sourceMappingURL=admin.css.map */

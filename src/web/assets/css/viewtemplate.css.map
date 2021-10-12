@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,qBAAsB;EAClB,OAAO,EAAE,IAAI;;AAGjB,MAAO;EACH,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,SAAS;EACjB,cAAc,EAAE,IAAI;EACpB,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,WAAW",
+"sources": ["../sass/viewtemplate.scss"],
+"names": [],
+"file": "viewtemplate.css"
+}
